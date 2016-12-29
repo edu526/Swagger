@@ -1,12 +1,17 @@
 # Skeleton project for Swagger
 
 
+### Install
+    $ npm i
 
-### Server
-    $ cd api/swagger
-    
-    $ http-server --cors .
+### Start
+    ## First terminal (File server)
+        $ cd api/swagger
+        
+        $ http-server --cors .
 
-    $ swagger project start
+    ## Second terminal
+        $ swagger project start
 
-    $ swagger project edit
+    ## Third terminal
+        $ swagger project editgit init
