@@ -1,0 +1,30 @@
+swagger: "2.0"
+
+info:
+  version: 1.0.0
+  title: Simple API
+  description: A simple API to learn how to write OpenAPI Specification
+
+schemes:
+  - https
+host: localhost:10010
+basePath: /
+
+paths:
+  /persons/{username}:
+    get:
+      summary: Gets a person
+      description: Returns a single person for its username.
+      parameters:
+        - name: username
+          in: path
+          required: true
+          description: The person's username
+          type: string
+      responses:
+        200:
+          description: A Person
+          schema:
+            $ref: "definitions.yaml#/SomeDefinitions/Person"
+        404:
+          description: The Person does not exists.  
