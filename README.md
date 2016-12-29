@@ -1,5 +1,6 @@
-# Skeleton project for Swagger
+# Project for Swagger
 
+    Project for use to more of one file yaml 
 
 ### Install
     $ npm i
